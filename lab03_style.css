@@ -1,0 +1,121 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      margin: 30px;
+    }
+
+    h2 {
+      color: #c00;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-top: 25px;
+    }
+
+    form {
+      width: 650px;
+      border: 1px solid #ccc;
+      padding: 25px;
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: inline-block;
+      width: 130px;
+      vertical-align: top;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 250px;
+      padding: 4px;
+      font-size: 14px;
+      border: 1px solid #999;
+      border-radius: 2px;
+    }
+
+    textarea {
+      width: 400px;
+      height: 80px;
+      border: 1px solid #999;
+      border-radius: 2px;
+      font-size: 14px;
+      padding: 4px;
+      resize: none;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .small-label {
+      width: auto;
+      margin-left: 135px;
+      font-size: 14px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-left: 135px;
+      margin-bottom: 10px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      width: auto;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 4px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      margin-left: 135px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #f2f2f2;
+      border: 1px solid #999;
+      padding: 6px 12px;
+      cursor: pointer;
+      margin-right: 10px;
+      border-radius: 3px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #e6e6e6;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #333;
+    }
+
+    .lock {
+      font-size: 13px;
+      color: #006400;
+      margin-top: 15px;
+      margin-left: 135px;
+    }
+
+    .support {
+      font-size: 13px;
+      color: #333;
+      margin-top: 10px;
+      margin-left: 135px;
+    }
+
+    .required {
+      color: red;
+    }
