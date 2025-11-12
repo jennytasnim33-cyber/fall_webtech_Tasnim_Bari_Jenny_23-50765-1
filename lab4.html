@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Form</title>
+  <link rel="stylesheet" href="lab4.css">
+  <script src="lab4_validation.js" defer></script>
+</head>
+<body>
+  <form id="donationForm">
+    <p><b>*</b> - Denotes Required Information</p>
+    <p><b>&gt; 1 Donation &nbsp;&nbsp;&gt; 2 Confirmation &nbsp;&nbsp;&gt; Thank You!</b></p>
+
+    <!-- Donor Information -->
+    <div class="section">
+      <h2>Donor Information</h2>
+
+      <label>First Name<span class="required">*</span></label><input type="text" id="firstName"><br>
+      <label>Last Name<span class="required">*</span></label><input type="text" id="lastName"><br>
+      <label>Company</label><input type="text" id="company"><br>
+      <label>Address 1<span class="required">*</span></label><input type="text" id="address1"><br>
+      <label>Address 2</label><input type="text" id="address2"><br>
+      <label>City<span class="required">*</span></label><input type="text" id="city"><br>
+      <label>State<span class="required">*</span></label>
+      <select id="state">
+        <option value="">Select a State</option>
+        <option>Dhaka</option>
+        <option>Chittagong</option>
+        <option>Khulna</option>
+      </select><br>
+      <label>Zip Code<span class="required">*</span></label><input type="text" id="zip"><br>
+      <label>Country<span class="required">*</span></label>
+      <select id="country">
+        <option value="">Select a Country</option>
+        <option>Bangladesh</option>
+        <option>India</option>
+        <option>USA</option>
+      </select><br>
+      <label>Phone</label><input type="tel" id="phone"><br>
+      <label>Fax</label><input type="text" id="fax"><br>
+      <label>Email<span class="required">*</span></label><input type="email" id="email"><br>
+
+      <label>Donation Amount<span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="amount" value="none">None</label>
+        <label><input type="radio" name="amount" value="50">$50</label>
+        <label><input type="radio" name="amount" value="75">$75</label>
+        <label><input type="radio" name="amount" value="100">$100</label>
+        <label><input type="radio" name="amount" value="250">$250</label>
+        <label><input type="radio" name="amount" value="other">Other</label>
+      </div>
+      <label>Other Amount $</label><input type="text" id="otherAmount"><br>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="regularGiving">I am interested in giving on a regular basis.</label>
+      </div>
+
+      <label class="small-label">Monthly Credit Card $</label><input type="text" style="width:80px;" id="monthlyAmount">
+      <label class="small-label">For</label><input type="text" style="width:40px;" id="months"> Months
+    </div>
+
+    <!-- Honorarium and Memorial -->
+    <div class="section">
+      <h2>Honorarium and Memorial Donation Information</h2>
+      <label>I would like to make this donation</label>
+      <div class="radio-group">
+        <label><input type="radio" name="honor" value="honor">To Honor</label>
+        <label><input type="radio" name="honor" value="memory">In Memory of</label>
+      </div>
+      <label>Name</label><input type="text" id="honorName"><br>
+      <label>Acknowledge Donation to</label><input type="text" id="ackName"><br>
+      <label>Address</label><input type="text" id="ackAddress"><br>
+      <label>City</label><input type="text" id="ackCity"><br>
+      <label>State</label>
+      <select id="ackState">
+        <option>Select a State</option>
+        <option>Dhaka</option>
+        <option>Chittagong</option>
+        <option>Khulna</option>
+      </select><br>
+      <label>Zip</label><input type="text" id="ackZip"><br>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="section">
+      <h2>Additional Information</h2>
+      <p>Please enter your name, company or <u>organization as you would like it to appear</u> in our publications:</p>
+      <label>Name</label><input type="text" id="pubName"><br>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="anonymous">I would like my gift to remain anonymous.</label><br>
+        <label><input type="checkbox" id="matchingGift">My employer offers a matching gift program. I will mail the matching gift form.</label><br>
+        <label><input type="checkbox" id="noThankYou">Please save the cost of acknowledging this gift by not mailing a thank you letter.</label>
+      </div>
+
+      <label>Comments</label><br>
+      <textarea id="comments" placeholder="Please type any questions or feedback here"></textarea><br><br>
+
+      <b>How may we contact you?</b><br>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="contact" value="email">E-mail</label>
+        <label><input type="checkbox" name="contact" value="postal">Postal Mail</label>
+        <label><input type="checkbox" name="contact" value="telephone">Telephone</label>
+        <label><input type="checkbox" name="contact" value="fax">Fax</label>
+      </div>
+
+      <p>I would like to receive newsletters and information about special events by:</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="newsletter" value="email">E-mail</label>
+        <label><input type="checkbox" name="newsletter" value="postal">Postal Mail</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="volunteer">I would like information about volunteering with the organization.</label>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Continue">
+    </div>
+
+    <div class="lock">
+      Donate online with confidence. You are on a secure server.
+    </div>
+
+    <div class="support">
+      If you have any problems or questions, please contact <u>support</u>.
+    </div>
+  </form>
+  <script src="lab4_validation.js" defer></script>
+</body>
+</html>
