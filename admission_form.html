@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .btn-group {
+            text-align: center;
+        }
+
+        button {
+            background: #333;
+            color: #fff;
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">University Online Admission Form</h1>
+
+    <form>
+
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required maxlength="50">
+
+            <label>Email Address:</label>
+            <input type="email" name="email" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male 
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </fieldset>
+
+        <!-- Academic Information Section -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label>Highest Qualification:</label>
+            <input type="text" name="qualification" required maxlength="30">
+
+            <label>Preferred Department:</label>
+            <select name="department" required>
+                <option value="">--- Select Department ---</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="EEE">Electrical & Electronic Engineering</option>
+                <option value="BBA">Business Administration</option>
+                <option value="Civil">Civil Engineering</option>
+            </select>
+
+            <label>Interests (Select multiple):</label>
+            <input type="checkbox" name="interests" value="Programming"> Programming
+            <input type="checkbox" name="interests" value="Networking"> Networking
+            <input type="checkbox" name="interests" value="Robotics"> Robotics
+            <input type="checkbox" name="interests" value="Sports"> Sports
+        </fieldset>
+
+        <!-- Document Upload Section -->
+        <fieldset>
+            <legend>Document Upload</legend>
+
+            <label>Upload Transcript (PDF or Image):</label>
+            <input type="file" name="transcript" required>
+
+            <label>Upload Your Photo:</label>
+            <input type="file" name="photo" required>
+        </fieldset>
+
+        <!-- Submit / Reset Buttons -->
+        <div class="btn-group">
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
